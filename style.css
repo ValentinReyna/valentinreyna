@@ -24,18 +24,18 @@ header{
 .logo a{
     font-family:'Poppins', sans-serif;
     color: rgb(78, 159, 61);
-    font-size: 50px;
+    font-size: 5vh;
     align-self: center;
-    letter-spacing: -.12em;
+    letter-spacing: -.01em;
     transition: .3s;
 }
 .logo a:hover{
     color: rgb(216, 233, 168);
-    letter-spacing: -.05em;
+    letter-spacing: -.0000125em;
 }
 header nav .navlinks a{
     color: rgb(78, 159, 61);
-    font-size: 17.5px;
+    font-size: 2.5vh;
     transition: .3s;
 }
 header nav .navlinks li{
@@ -44,22 +44,30 @@ header nav .navlinks li{
 }
 header nav .navlinks li:hover{
     transform: scale(1.2);
-    letter-spacing: .125em;
+    letter-spacing: .1em;
 }
 h2{
     text-align: center;
-    padding: 15px 2%;
-    background-color: rgb(81, 30, 71);
+    padding: .1vh;
+    margin:1vh 0;
+    font-size: 3vh;
+    background-color: rgb(216, 233, 168);
     cursor:default;
+    color: rgb(15, 14, 14);
 }
 h3{
     text-align: center;
-    padding: 15px 2%;
+    padding: 2.5vh 2%;
     cursor:default;
-    font-size: 30px;
-    border: 10px;
-    border-bottom: 100px;
-    border-color: aliceblue;
+    font-size: 3vh;
+    background-color: rgb(81, 30, 71);
+}
+h4{
+    text-align: center;
+    padding: 15px 2%;
+    font-size: 3vh;
+    background-color: rgb(25, 26, 25);
+    cursor:default;
 }
 #desc1{
     text-align: left;
@@ -80,7 +88,6 @@ h3{
     border-radius: 10px;
     align-content: space-evenly;
     transition: .3s;
-
 }
 .foto:hover{
     scale:105%;
@@ -90,40 +97,6 @@ footer{
     height: 50px;
     text-align: center;
     padding: 15px;
-}
-@media screen and (max-width:700px){
-    header{
-        height: 80px;
-        padding: 5px 2.5%;
-    }
-    .logo a{
-        font-size: 40px;
-        letter-spacing: -.12em;
-    }
-    header nav .navlinks li{
-        display: inline-block;
-        padding: 0 5px;
-    }
-    header nav .navlinks li:hover{
-        transform: scale(1);
-        letter-spacing: 0;
-    }
-    #desc1, #desc2{
-        font-size: 12.5px;
-        text-align: center;
-    }
-    .video{
-        min-width: 200px;
-        max-width: auto;
-        height: 200px;
-    }
-    #galeria{
-        min-height: 300px;
-        min-width: 400px;
-    }  
-    .release{
-        flex-direction: column;
-    }
 }
 .contenedor-imagenes{
     display: flex;
@@ -149,3 +122,48 @@ footer{
 .imagen:hover{
     scale:102.5%;
 }
+@media screen and (max-width:1200px){
+    h2,h3,h4{
+        font-size: 2.5vh;
+    }
+    header{
+        height: 80px;
+        padding: 5px 2.5%;
+    }
+    .logo a{
+        font-size: 5vw;
+        letter-spacing: -.012em;
+    }
+    header nav .navlinks a{
+        font-size: 2.5vw;
+    }
+    header nav .navlinks li{
+        display: inline-block;
+        padding: 0 5px;
+    }
+    header nav .navlinks li:hover{
+        transform: scale(1);
+        letter-spacing: 0em;
+    }
+    #desc1, #desc2{
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .foto{
+        width: 100vw;
+        height: auto;
+        padding: 5vw;
+        border-radius: 7.5vw;
+    }
+    .release{
+        flex-direction: column;
+    }
+    .imagen{
+        width: 45vw;
+        max-height: 15vh;
+    }
+    footer{
+        font-size: 1.5vh;
+    }
+}
+
