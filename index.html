@@ -1,5 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
+
+<script>
+    function expandirImagen(imagen) {
+        var imagenExpandida = document.getElementById('imagenExpandida');
+        imagenExpandida.src = imagen.src;
+        document.querySelector('.imagen-expandida').style.display = 'flex';
+    }
+
+    function cerrarImagenExpandida() {
+        document.querySelector('.imagen-expandida').style.display = 'none';
+    }
+</script>
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentín Reyna</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://i.ibb.co/Yy30FBL/ARecurso-20.png" type="image/x-icon">
 </head>
 
 <body>
@@ -24,7 +37,7 @@
     </header>
 
     <main>
-        <h2 id="modelado">Modelado</h2>
+        <h2 id="modelado">modelado</h2>
 
         <!-- Ezeiza -->
 
@@ -37,64 +50,57 @@
             <p id="desc2">Modelado y texturizado en <i>Blender</i><br>Importado dentro del videojuego en el game engine <i>Unity</i></p>
             <img class="foto" src="https://thumb.modcdn.io/mods/3a3f/3133381/thumb_1020x2000/20230701183657_1.jpg" alt="">
         </div>
-        <div class="contenedor-imagenes">
-            <h4>Galería</h4>
-        </div>
-        <div class="contenedor-imagenes">
-            <div class="marco">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipNW2dAptWf1uXdYHR3Qlzn_AMNAo9NYOoC9NlZ3=s0" class="imagen">
-            </div>
-            <div class="marco">
-              <img src="https://thumb.modcdn.io/mods/3a3f/3133381/thumb_1020x2000/20230701183546_1.jpg" class="imagen">
-            </div>
-        </div>
-        <div class="contenedor-imagenes">
-            <div class="marco">
-                <img src="https://thumb.modcdn.io/mods/3a3f/3133381/thumb_1020x2000/20230701183505_1.jpg" class="imagen">
-            </div>
-            <div class="marco">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipMY9vyiuWwN6ulpz07RbiLpcPCnmAVTo4G_6Rkk=s0" class="imagen">
-            </div>
-        </div>
 
-    <!-- Monte Grande -->
+        <!-- Monte Grande -->
 
         <h3 id="MonteGrande">Skatepark de Monte Grande</h3>
         <div class="release">
             <img class="foto" src="https://thumb.modcdn.io/mods/3a3f/3133381/thumb_1020x2000/20230701183505_1.jpg" alt="">
-            <p id="desc1">Partiendo de los planos del skatepark diseñado originalmente por <i>Andres Garbuyo</i> realizé el modelado y texturizado del skatepark y sus alrededores para su posterior uso dentro del videojuego <i>Skater XL</i> como un skatepark jugable</p>
+            <p id="desc1">Partiendo de los planos del skatepark diseñado originalmente por <i>Martin Pibotto</i> realizé el modelado y texturizado del skatepark y sus alrededores para su posterior uso dentro del videojuego <i>Session</i> como un skatepark jugable</p>
         </div>
         <div class="release">
-            <p id="desc2">Modelado y texturizado en <i>Blender</i><br>Importado dentro del videojuego en el game engine <i>Unity</i></p>
+            <p id="desc2">Modelado y texturizado en <i>Blender</i><br>Importado dentro del videojuego en el game engine <i>Unreal Engine</i></p>
             <img class="foto" src="https://thumb.modcdn.io/mods/3a3f/3133381/thumb_1020x2000/20230701183657_1.jpg" alt="">
         </div>
+        
+        <!-- Galeria -->
+
+        <h2 id="fotos">fotos</h2>
+
         <div class="contenedor-imagenes">
-            <h4>Galería</h4>
+            <div class="marco">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipNW2dAptWf1uXdYHR3Qlzn_AMNAo9NYOoC9NlZ3=s0" class="imagen" onclick="expandirImagen(this)">
+            </div>
+            <div class="marco">
+                <img src="https://thumb.modcdn.io/mods/3a3f/3133381/thumb_1020x2000/20230701183546_1.jpg" class="imagen" onclick="expandirImagen(this)">
+            </div>
         </div>
         <div class="contenedor-imagenes">
             <div class="marco">
-              <img src="https://lh3.googleusercontent.com/p/AF1QipNW2dAptWf1uXdYHR3Qlzn_AMNAo9NYOoC9NlZ3=s0" class="imagen">
+                <img src="https://thumb.modcdn.io/mods/3a3f/3133381/thumb_1020x2000/20230701183505_1.jpg" class="imagen" onclick="expandirImagen(this)">
             </div>
             <div class="marco">
-              <img src="https://thumb.modcdn.io/mods/3a3f/3133381/thumb_1020x2000/20230701183546_1.jpg" class="imagen">
-            </div>
-        </div>
-        <div class="contenedor-imagenes">
-            <div class="marco">
-                <img src="https://thumb.modcdn.io/mods/3a3f/3133381/thumb_1020x2000/20230701183505_1.jpg" class="imagen">
-            </div>
-            <div class="marco">
-                <img src="https://lh3.googleusercontent.com/p/AF1QipMY9vyiuWwN6ulpz07RbiLpcPCnmAVTo4G_6Rkk=s0" class="imagen">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMY9vyiuWwN6ulpz07RbiLpcPCnmAVTo4G_6Rkk=s0" class="imagen" onclick="expandirImagen(this)">
             </div>
         </div>
 
-        <h2 id="contacto">Contacto</h2>
-        <p>E-Mail: valentinreyna211@gmail.com</p>
-        <p>Celular: 11 6594-6592</p>
+        <!-- Contacto -->
+
+        <h2 id="contacto">contacto</h2>
+        <div class="contact-text">
+            <p>E-Mail: valentinreyna211@gmail.com</p>
+            <br>
+            <p>Celular: 11 6594-6592</p>
+        </div>
+        
 
         <footer>
             <p>2023 © Valentín Julián Reyna</p>
         </footer>
+
+        <div class="imagen-expandida" onclick="cerrarImagenExpandida()">
+            <img id="imagenExpandida" src="" alt="Imagen Expandida">
+        </div>
     </main>
 </body>
 </html>
