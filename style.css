@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -16,11 +19,14 @@ body{
     width: 100vw;
     height: 100vh;
 }
+#desc1 a{
+    color:rgb(78, 159, 61);
+}
 .contact-text{
     text-align: center;
-    padding: 2.5vh;
+    margin: 2.5vh;
     cursor:default;
-
+    font-size: 25px;
 }
 header{
     background-color: rgb(25, 26, 25);
@@ -68,10 +74,9 @@ h3{
     text-align: center;
     padding: 2.5vh 2%;
     cursor:default;
-    font-size: 3vh;
+    font-size: 50px;
     transition: 1s;
     color: rgb(78, 159, 61);
-    border-color: rgb(78, 159, 61);
 }
 h3:hover{
     letter-spacing: .25em;
@@ -86,14 +91,12 @@ h4{
 #desc1{
     text-align: left;
     cursor:default;
-    font-size: 17.5px;
     max-width: 65%;
     max-height: 300px;
 }
 #desc2{
     text-align: right;
     cursor:default;
-    font-size: 17.5px;
     max-width: 65%;
     max-height: 300px;
 }
@@ -102,10 +105,10 @@ h4{
     border-radius: 10px;
     align-content: space-evenly;
     transition: .3s;
-    cursor:default;
+    cursor:pointer;
 }
 .foto:hover{
-    scale:105%;
+    scale:102.5%;
 }
 footer{
     background-color: rgb(25, 26, 25);
@@ -123,9 +126,9 @@ footer{
 .release{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 2vw;
     align-items: center;
-    padding: 20px 5%;
+    padding: 1vh 3vw 1vh 3vw;
 }
 .imagen{
     height: 45vh;
@@ -135,7 +138,6 @@ footer{
     align-items: center;
     margin:1vw;
     cursor:pointer;
-
 }
 .imagen:hover{
     scale:102.5%;
@@ -196,4 +198,8 @@ footer{
         width: 45vw;
         max-height: 15vh;
     }
+    .contact-text{
+        font-size: 2vw;
+    }
 }
+
