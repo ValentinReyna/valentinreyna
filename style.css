@@ -47,7 +47,7 @@ header{
 }
 .logo a:hover{
     color: rgb(216, 233, 168);
-    letter-spacing: 1em;
+    letter-spacing: .25em;
 }
 header nav .navlinks a{
     color: rgb(78, 159, 61);
